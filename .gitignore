@@ -1,0 +1,6 @@
+# IGNORED Files
+=========
+
+.idea/
+.vscode/
+*.code-workspace
