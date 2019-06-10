@@ -1,5 +1,7 @@
 // Create a Stripe client.
-var stripe = Stripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
+
+// PUBLISHABLE TEST KEY TOKEN
+var stripe = Stripe('pk_test_MNIX7YAPzohF9oTOiNUQRART');
 
 // Create an instance of Elements.
 var elements = stripe.elements();
@@ -21,6 +23,9 @@ var style = {
     iconColor: '#fa755a'
   }
 };
+
+// Style Button with BootStrap
+document.querySelector('#payment-form button').classList ='btn btn-primary btn-block mt-4';
 
 // Create an instance of the card Element.
 var card = elements.create('card', {style: style});
